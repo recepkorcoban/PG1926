@@ -1,0 +1,24 @@
+table{
+    margin:auto;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    border-spacing: 5px;
+}
+table td{
+    border: 2px;
+    width: 75px;
+    height: 75px;
+    background: white;
+    line-height: 75px;
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    border-color: gray;
+}
+.siyah{
+    background-color: black;
+}
+table th{
+    font-weight: bold;
+}

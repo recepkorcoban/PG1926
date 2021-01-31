@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PARA ÜSTÜ</title>
+        <link rel="stylesheet" href="4.css" type="text/css" />
+    </head>
+    <body>
+        <form>
+            <p>Para üstünü giriniz: </p><input id="para" type="text" placeholder="Lütfen nokta kullanarak giriniz!" autofocus required>
+            <input onclick="paralar()" type="button" value="Gönder">
+            <input type="reset">
+        </form>
+        <script type="text/javascript">
+            function paralar(){
+            var para=document.getElementById("para");
+            var paraustu = para.value;
+            var aded_1 =0;
+            var aded_50 =0;
+            var aded_25 =0;
+            var aded_10 =0;
+            var aded_5 =0;
+            var aded_01 =0;
+            var a=0;
+            while (a<10){
+                if (paraustu==0){
+                    break;
+                }
+                if (paraustu>1){
+                    for (i=0; i<paraustu; i++){
+                        paraustu=paraustu-1;
+                        aded_1=aded_1+1;
+                    }
+                }
+                if (paraustu < 1 & paraustu >= 0.50){
+
+                }
+                if (paraustu < 0.50 & paraustu >= 0.25){
+                    aded_25 +=1;
+                    paraustu = paraustu-0.25;
+                }
+                if (paraustu < 0.25 & paraustu >= 0.10){
+                    aded_10+=1;
+                    paraustu = paraustu-0.10;
+                }
+                if (paraustu < 0.10 & paraustu >= 0.05){
+
+                }
+                if (paraustu < 0.05 & paraustu >= 0.01){
+                    aded_01+=1;
+                    paraustu = paraustu-0.01;
+                }
+                
+                a=a+1;
+            }
+            // BURDA ALERT İLE EKRANA BASILACAK
+
+            alert(aded_1 +" adet 1 TL "
+            +aded_50 +" adet 50 KURUŞ "
+            +aded_25 + " adet 25 KURUŞ "
+            +aded_10 +" adet 10 KURUŞ "
+            +aded_5 +" adet 5 KURUŞ "
+            +aded_01 +" adet 1 KURUŞ");
+        }
+        </script>
+    </body>
+</html>

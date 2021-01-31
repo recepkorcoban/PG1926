@@ -1,0 +1,15 @@
+input{
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+}
+p{
+    color: red;
+    font-family: verdana;
+    font-weight: bold;
+}
+#para{
+    width: 200px;
+
+}
